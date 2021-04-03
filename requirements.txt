@@ -1,6 +1,6 @@
 click==7.1.2
 flask==1.1.2
-intel-openmp==2020.2
+intel-openmp==2020.0.133
 itsdangerous==1.1.0
 jinja2==2.11.3
 joblib==1.0.1
