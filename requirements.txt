@@ -164,7 +164,6 @@ python-docx==0.8.10
 python-mnist==0.6
 pytz==2019.3
 PyWavelets==1.1.1
-pywin32==227
 pywinpty==0.5.7
 PyYAML==5.3.1
 pyzmq==19.0.2
