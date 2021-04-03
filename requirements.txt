@@ -1,5 +1,6 @@
 click==7.1.2
 flask==1.1.2
+gunicorn==19.9.0
 intel-openmp==2020.0.133
 itsdangerous==1.1.0
 jinja2==2.11.3
