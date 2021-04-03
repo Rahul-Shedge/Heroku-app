@@ -6,7 +6,6 @@ jinja2==2.11.3
 joblib==1.0.1
 markupsafe==1.1.1
 numpy==1.19.2
-openssl==1.1.1k
 pandas==1.2.3
 pip==21.0.1
 python==3.8.8
