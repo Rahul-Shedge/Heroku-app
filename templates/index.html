@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consumer Dispute</title>
+    <style>
+        body {
+            text-align: left;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body style="background-color:lavender;" >
+    <div class="form">
+        <form action="/method" method="POST">
+            <h1>Consumer complaint resolution</h1>
+            <ol>
+            <div>
+                <label>Date received</label>
+                <input type="date" name="Date received" placeholder="dd-mm-yyyy" style="background-color:Thistle";>
+            </div>
+            <br>
+            <div>
+                <label>Product</label>
+                <select type="text" name="Product" id="product" style="background-color:Thistle";>
+                    <option value="Mortgage">Mortgage</option>
+                    <option value="Debt collection">Debt collection</option>
+                    <option value="Credit reporting">Credit reporting</option>
+                    <option value="Credit card">Credit card</option>
+                    <option value="Bank account or service">Bank account or service</option>
+                    <option value="Consumer Loan">Consumer Loan</option>
+                    <option value="Student loan">Student loan</option>
+                    <option value="Money transfers">Money transfers</option>
+                    <option value="Payday loan">Payday loan</option>
+                    <option value="Prepaid card">Prepaid card</option>
+                    <option value="Other financial service">Other financial service</option>
+                    <option value="Virtual currency">Virtual currency</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Sub-product</label>
+                <select type="text" name="Sub-product" id="Sub-product" style="background-color:Thistle";>
+                    <option value="Other mortgage">Other mortgage</option>
+                    <option value="Conventional fixed mortgage">Conventional fixed mortgage</option>
+                    <option value="Checking account">Checking account</option>
+                    <option value="Other (i.e. phone, health club, etc.)">Other (i.e. phone, health club, etc.)</option>
+                    <option value="I do not know">I do not know</option>
+                    <option value="Credit card">Credit card</option>
+                    <option value="Conventional adjustable mortgage (ARM)">Conventional adjustable mortgage (ARM)</option>
+                    <option value="FHA mortgage">FHA mortgage</option>
+                    <option value="Non-federal student loan">Non-federal student loan</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Vehicle loan">Vehicle loan</option>
+                    <option value="International money transfer">International money transfer</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Issue</label>
+                <select type="text" name="Issue" id="Issue" style="background-color:Thistle";>
+                    <option value="Loan modification,collection,foreclosure">Loan modification,collection,foreclosure</option>
+                    <option value="Incorrect information on credit report">Incorrect information on credit report</option>
+                    <option value="Loan servicing, payments, escrow account">Loan servicing, payments, escrow account</option>
+                    <option value="Cont'd attempts collect debt not owed">Cont'd attempts collect debt not owed</option>
+                    <option value="Account opening, closing, or management">Account opening, closing, or management</option>
+                    <option value="Disclosure verification of debt">Disclosure verification of debt</option>
+                    <option value="Deposits and withdrawals">Deposits and withdrawals</option>
+                    <option value="Managing the loan or lease">Managing the loan or lease</option>
+                    <option value="Unable to get credit report/credit score">Unable to get credit report/credit score</option>
+                    <option value="Improper contact or sharing of info">Improper contact or sharing of info</option>
+                    <option value="Customer service / Customer relations">Customer service / Customer relations</option>
+                    <option value="Unauthorized transactions/trans. issues">Unauthorized transactions/trans. issues</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Sub-issue</label>
+                <select type="text" name="Sub-issue" id="Sub-issue" style="background-color:Thistle";>
+                    <option value="Account status">Account status</option>
+                    <option value="Debt is not mine">Debt is not mine</option>
+                    <option value="Information is not mine">Information is not mine</option>
+                    <option value="Not given enough info to verify debt">Not given enough info to verify debt</option>
+                    <option value="Debt was paid">Debt was paid</option>
+                    <option value="Frequent or repeated calls">Frequent or repeated calls</option>
+                    <option value="Account terms">Account terms</option>
+                    <option value="Attempted to collect wrong amount">Attempted to collect wrong amount</option>
+                    <option value="Problem getting my free annual report">Problem getting my free annual report</option>
+                    <option value="Right to dispute notice not received">Right to dispute notice not received</option>
+                    <option value="No notice of investigation status/result">No notice of investigation status/result</option>
+                    <option value="Problem getting report or credit score">Problem getting report or credit score</option>
+                    <option value="Debt resulted from identity theft">Debt resulted from identity theft</option>
+                    <option value="Trouble with how payments are handled">Trouble with how payments are handled</option>
+                    <option value="Contacted me after I asked not to">Contacted me after I asked not to</option>
+                    <option value="Threatened to sue on too old debt">Threatened to sue on too old debt</option>
+                    <option value="Can't decrease my monthly payments">Can't decrease my monthly payments</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Consumer complaint narrative</label>
+                <input type="text" name="text-box" id="Consumer complaint narrative" placeholder="text-box" style="background-color:Thistle";>
+            </div>
+            <br>
+            <div>
+                <label>Company public response</label>
+                <select type="text" name="Company public response" id="Company public response" style="background-color:Thistle";>
+                    <option value="Company chooses not to provide a public response">Company chooses not to provide a public response</option>
+                    <option value="Company has responded to the consumer and the CFPB and chooses not to provide a public response">Company has responded to the consumer and the CFPB and chooses not to provide a public response</option>
+                    <option value="Company believes it acted appropriately as authorized by contract or law">Company believes it acted appropriately as authorized by contract or law</option>
+                    <option value="Company believes complaint caused principally by actions of third party outside the control or direction of the company">Company believes complaint caused principally by actions of third party outside the control or direction of the company</option>
+                    <option value="Company believes the complaint is the result of a misunderstanding">Company believes the complaint is the result of a misunderstanding</option>
+                    <option value="Company disputes the facts presented in the complaint">Company disputes the facts presented in the complaint</option>
+                    <option value="Company believes complaint is the result of an isolated error">Company believes complaint is the result of an isolated error</option>
+                    <option value="Company can't verify or dispute the facts in the complaint">Company can't verify or dispute the facts in the complaint</option>
+                    <option value="Company believes complaint represents an opportunity for improvement to better serve consumers">Company believes complaint represents an opportunity for improvement to better serve consumers</option>
+                    <option value="Company believes complaint relates to a discontinued policy or procedure">Company believes complaint relates to a discontinued policy or procedure</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Company</label>
+                <select type="text" name="Company" id="Company" style="background-color:Thistle";>
+                    <option value="Bank of America">Bank of America</option>
+                    <option value="Wells Fargo & Company">Wells Fargo & Company</option>
+                    <option value="JPMorgan Chase & Co.">JPMorgan Chase & Co.</option>
+                    <option value="Equifax">Equifax</option>
+                    <option value="Experian">Experian</option>
+                    <option value="Citibank">Citibank</option>
+                    <option value="Darwin Solutions Inc.">Darwin Solutions Inc.</option>
+                    <option value="Sentry Abstract Co.">Sentry Abstract Co.</option>
+                    <option value="Vehicle Acceptance Corporation">Vehicle Acceptance Corporation</option>
+                    <option value="Harrington, anderson & deblasio">Harrington, anderson & deblasio</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>State</label>
+                <select type="text" name="State" id="State" style="background-color:Thistle";>
+                    <option value="CA">CA</option>
+                    <option value="FL">FL</option>
+                    <option value="TX">TX</option>
+                    <option value="NY">NY</option>
+                    <option value="GA">GA</option>
+                    <option value="NJ">NJ</option>
+                    <option value="PA">PA</option>
+                    <option value="IL">IL</option>
+                    <option value="VA">VA</option>
+                    <option value="MD">MD</option>
+                    <option value="OH">OH</option>
+                    <option value="NC">NC</option>
+                    <option value="MI">MI</option>
+                    <option value="AZ">AZ</option>
+                    <option value="WA">WA</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>ZIP code</label>
+                <input type="number" maxlength="6" minlength="6" max="999999" min="100000" pattern="[0-9]{6,}" placeholder="Zip code" required style="background-color:Thistle";>
+
+            </div>
+            <br>
+            <div>
+                <label>Tags</label>
+                <select type="text" name="Tags" id="Tags" style="background-color:Thistle";>
+                    <option value="Older American">Older American</option>
+                    <option value="Servicemember">Servicemember</option>
+                    <option value="Older American, Servicemember">Older American, Servicemember</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Consumer consent provided?</label>
+                <select type="text" name="Consumer consent provided?" id="Consumer consent provided?" style="background-color:Thistle";>
+                    <option value="Consent provided">Consent provided</option>
+                    <option value="Consent not provided">Consent not provided</option>
+                    <option value="Other">Other</option>
+                    <option value="Consent withdrawn">Consent withdrawn</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Submitted via</label>
+                <select type="text" name="Submitted via" id="Submitted via" style="background-color:Thistle";>
+                    <option value="Web">Web</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Postal mail">Postal mail</option>
+                    <option value="Fax">Fax</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Date sent to company</label>
+                <input type="date" name="Date sent to company" placeholder="dd-mm-yyyy" style="background-color:Thistle";>
+            </div>
+            <br>
+            <div>
+                <label>Company response to consumer</label>
+                <select type="text" name="Company response to consumer" id="Company response to consumer" style="background-color:Thistle";>
+                    <option value="Closed with explanation">Closed with explanation</option>
+                    <option value="Closed with non-monetary relief">Closed with non-monetary relief</option>
+                    <option value="Closed with monetary relief">Closed with monetary relief</option>
+                    <option value="Closed without relief">Closed without relief</option>
+                    <option value="Closed">Closed</option>
+                    <option value="Closed with relief">Closed with relief</option>
+                    <option value="Untimely response">Untimely response</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Timely response?</label>
+                <select type="text" name="Timely response?" id="Timely response?" style="background-color:Thistle";>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Complaint ID</label>
+                <input type="number" name="Complaint ID" id="Complaint ID" style="background-color:Thistle";>
+            </div>
+            <br>
+    <button type="submit" style="background-color:rosybrown"; class="you">Submit</button>
+            </ol>
+</form>
+        <br>
+        <br>
+    </div>
+
+</body>
+</html>
