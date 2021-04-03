@@ -108,9 +108,6 @@ MarkupSafe
 matplotlib 
 missingno==0.4.2
 mistune
-mkl-fft==1.2.0
-mkl-random==1.1.1
-mkl-service==2.3.0
 mlxtend==0.17.2
 more-itertools==8.4.0
 multidict==4.7.6
