@@ -1,4 +1,4 @@
--atplotlib @ file:///C:/ci/matplotlib-base_1592846084747/work
+matplotlib @ file:///C:/ci/matplotlib-base_1592846084747/work
 absl-py==0.8.1
 aiohttp==3.6.2
 anaconda-client==1.7.2
