@@ -14,7 +14,7 @@ scikit-learn==0.24.1
 scipy==1.5.4
 setuptools==52.0.0
 six==1.15.0
-sqlite==3.35.3
+sqlite==3.7.17
 threadpoolctl==2.1.0
 vc==14.2	
 vs2015_runtime==14.27.29016
